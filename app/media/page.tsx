@@ -18,10 +18,9 @@ export default function MediaPage() {
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
-            <h1 className="text-4xl font-bold tracking-tight md:text-5xl mb-6">Media Center</h1>
+            <h1 className="text-4xl font-bold tracking-tight md:text-5xl mb-6">News & Media</h1>
             <p className="text-lg md:text-xl">
-              Stay updated with the latest news, press releases, and multimedia content from Health Affairs Initiative
-              Rwanda.
+              Stay updated with the latest news, stories, advocacy campaigns, youth voices, and events from Health Affairs for Youth Initiatives (HAYi).
             </p>
           </div>
         </div>
@@ -31,9 +30,9 @@ export default function MediaPage() {
       <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-3xl text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tight md:text-4xl mb-4">News & Press Releases</h2>
+            <h2 className="text-3xl font-bold tracking-tight md:text-4xl mb-4">News & Blog</h2>
             <p className="text-lg text-muted-foreground">
-              Latest news, press releases, and media coverage of HAI's work.
+              Share stories, updates, advocacy campaigns, youth voices, and events. Success stories from schools, youth-led campaign highlights, SRHR awareness posts, and policy dialogues.
             </p>
           </div>
 
@@ -49,10 +48,10 @@ export default function MediaPage() {
                   <span className="mx-2">•</span>
                   <span>March 15, 2023</span>
                 </div>
-                <h3 className="text-xl font-bold mb-2">HAI Launches New Digital Health Education Platform</h3>
+                <h3 className="text-xl font-bold mb-2">HAYi Launches Menya, Wirinde, Ubeho Program</h3>
                 <p className="text-muted-foreground mb-4">
-                  Health Affairs Initiative Rwanda announces the launch of its new digital health education platform
-                  aimed at improving access to health information.
+                  Health Affairs for Youth Initiatives announces the launch of its new school-based SRHR program
+                  aimed at empowering learners with accurate knowledge to make safe and informed choices.
                 </p>
                 <Button asChild variant="outline">
                   <Link href="#">Read More</Link>
@@ -72,11 +71,11 @@ export default function MediaPage() {
                   <span>February 28, 2023</span>
                 </div>
                 <h3 className="text-xl font-bold mb-2">
-                  HAI Partners with Ministry of Health on Youth Health Initiative
+                  HAYi Partners with Schools on Youth Empowerment Initiative
                 </h3>
                 <p className="text-muted-foreground mb-4">
-                  A new partnership between HAI and the Ministry of Health aims to improve youth health outcomes through
-                  innovative programs.
+                  A new partnership between HAYi and schools in Gatsibo, Karongi, and Nyarugenge aims to improve youth health outcomes through
+                  peer education and SRHR programs.
                 </p>
                 <Button asChild variant="outline">
                   <Link href="#">Read More</Link>
@@ -95,9 +94,9 @@ export default function MediaPage() {
                   <span className="mx-2">•</span>
                   <span>January 10, 2023</span>
                 </div>
-                <h3 className="text-xl font-bold mb-2">HAI's Work Featured in Global Health Journal</h3>
+                <h3 className="text-xl font-bold mb-2">Youth-Led Campaign Highlights Gender Equity</h3>
                 <p className="text-muted-foreground mb-4">
-                  HAI's innovative approach to digital health advocacy was featured in a leading global health journal
+                  HAYi's youth-led advocacy campaigns promoting gender equity and SRHR awareness were featured in local media
                   this month.
                 </p>
                 <Button asChild variant="outline">
@@ -214,7 +213,7 @@ export default function MediaPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" variant="secondary">
-              <Link href="mailto:media@hairwanda.org">Email Media Relations</Link>
+              <Link href="mailto:info@hayi.org">Email Media Relations</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-white text-white bg-primary hover:bg-primary/10">
               <Link href="/contact">

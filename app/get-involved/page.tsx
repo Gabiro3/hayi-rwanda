@@ -22,8 +22,8 @@ export default function GetInvolvedPage() {
           <div className="max-w-3xl">
             <h1 className="text-4xl font-bold tracking-tight md:text-5xl mb-6">Get Involved</h1>
             <p className="text-lg md:text-xl">
-              At HAI, we believe in the power of collaboration to achieve our mission. There are several ways you can
-              contribute to our work and help advance health equity in Rwanda.
+              At HAYi, we believe in the power of collaboration to achieve our mission. There are several ways you can
+              contribute to our work and help advance youth health and empowerment in Rwanda.
             </p>
           </div>
         </div>
@@ -58,9 +58,9 @@ export default function GetInvolvedPage() {
               <div className="mb-4 rounded-full bg-primary/10 p-3">
                 <Users className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="mb-2 text-xl font-medium">Volunteer</h3>
+              <h3 className="mb-2 text-xl font-medium">Become a Peer Educator</h3>
               <p className="text-muted-foreground mb-4">
-                Become part of our team and help us implement our health initiatives in communities across Rwanda.
+                Join our team of peer educators and help us implement our health initiatives in schools and communities across Rwanda.
               </p>
               <Button asChild className="mt-auto">
                 <Link href="#volunteer">Join Us</Link>
@@ -70,9 +70,9 @@ export default function GetInvolvedPage() {
               <div className="mb-4 rounded-full bg-primary/10 p-3">
                 <Heart className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="mb-2 text-xl font-medium">Partner</h3>
+              <h3 className="mb-2 text-xl font-medium">Partner With Us</h3>
               <p className="text-muted-foreground mb-4">
-                Join forces with us to create lasting solutions in global health through strategic partnerships.
+                Join forces with us to create lasting solutions in youth health through strategic partnerships with schools, government, and NGOs.
               </p>
               <Button asChild className="mt-auto">
                 <Link href="#partner">Partner With Us</Link>
@@ -160,41 +160,41 @@ export default function GetInvolvedPage() {
               />
             </div>
             <div className="order-1 lg:order-2">
-              <h2 className="text-3xl font-bold tracking-tight md:text-4xl mb-4">Volunteer With Us</h2>
+              <h2 className="text-3xl font-bold tracking-tight md:text-4xl mb-4">Become a Peer Educator</h2>
               <p className="text-lg text-muted-foreground mb-6">
-                Join our team of dedicated volunteers who are making a difference in communities across Rwanda. We offer
-                various volunteer opportunities based on your skills and interests.
+                Join our team of dedicated peer educators who are making a difference in schools and communities across Rwanda. We offer
+                training and support to help you become an effective health advocate.
               </p>
               <div className="space-y-6">
                 <div className="space-y-2">
-                  <h3 className="text-xl font-medium">Volunteer Opportunities</h3>
+                  <h3 className="text-xl font-medium">Peer Educator Opportunities</h3>
                   <ul className="space-y-2 text-muted-foreground">
                     <li className="flex items-start">
                       <ArrowRight className="mr-2 h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span>Community Health Educator</span>
+                      <span>SRHR Peer Educator in Schools</span>
                     </li>
                     <li className="flex items-start">
                       <ArrowRight className="mr-2 h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span>Digital Content Creator</span>
+                      <span>Mental Health Peer Support</span>
                     </li>
                     <li className="flex items-start">
                       <ArrowRight className="mr-2 h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span>Event Coordinator</span>
+                      <span>GBV Prevention Advocate</span>
                     </li>
                     <li className="flex items-start">
                       <ArrowRight className="mr-2 h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span>Research Assistant</span>
+                      <span>Youth Leadership Mentor</span>
                     </li>
                     <li className="flex items-start">
                       <ArrowRight className="mr-2 h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span>Advocacy Champion</span>
+                      <span>Community Health Champion</span>
                     </li>
                   </ul>
                 </div>
               </div>
               <div className="mt-8">
                 <Button asChild size="lg">
-                  <Link href="#">Apply to Volunteer</Link>
+                  <Link href="#">Apply to Become a Peer Educator</Link>
                 </Button>
               </div>
             </div>
@@ -209,8 +209,8 @@ export default function GetInvolvedPage() {
             <div>
               <h2 className="text-3xl font-bold tracking-tight md:text-4xl mb-4">Partner With Us</h2>
               <p className="text-lg text-muted-foreground mb-6">
-                We believe in the power of partnerships to create lasting change. Join forces with us to advance health
-                equity in Rwanda and beyond.
+                We believe in the power of partnerships to create lasting change. Join forces with us to advance youth health
+                and empowerment in Rwanda. We collaborate with schools, government, and NGOs to maximize our impact.
               </p>
               <div className="space-y-6">
                 <div className="space-y-2">
@@ -218,15 +218,15 @@ export default function GetInvolvedPage() {
                   <ul className="space-y-2 text-muted-foreground">
                     <li className="flex items-start">
                       <ArrowRight className="mr-2 h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span>Program Implementation Partners</span>
+                      <span>School Partnerships for Program Implementation</span>
                     </li>
                     <li className="flex items-start">
                       <ArrowRight className="mr-2 h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span>Research Collaborations</span>
+                      <span>Government Collaborations</span>
                     </li>
                     <li className="flex items-start">
                       <ArrowRight className="mr-2 h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span>Technology Partners</span>
+                      <span>NGO Partnerships</span>
                     </li>
                     <li className="flex items-start">
                       <ArrowRight className="mr-2 h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
@@ -234,7 +234,7 @@ export default function GetInvolvedPage() {
                     </li>
                     <li className="flex items-start">
                       <ArrowRight className="mr-2 h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span>Corporate Social Responsibility Initiatives</span>
+                      <span>Research Collaborations</span>
                     </li>
                   </ul>
                 </div>

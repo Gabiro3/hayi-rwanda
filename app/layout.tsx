@@ -11,11 +11,11 @@ import './globals.css'
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "HASO Group | Health Affairs & Social Opportunities",
+  title: "HAYi | Health Affairs for Youth Initiatives",
   description:
     "Driving positive change in global health by empowering communities, advancing health equity, and leveraging technology for impact.",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/HAYI LOGO-02.png",
   },
 }
 

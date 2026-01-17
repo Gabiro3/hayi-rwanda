@@ -76,7 +76,7 @@ export default function ContactPage() {
               className="text-lg md:text-xl"
             >
               We would love to hear from you! Whether you have a question, suggestion, or are interested in
-              collaborating with us, please reach out.
+              collaborating with HAYi, please reach out.
             </motion.p>
           </motion.div>
         </div>
@@ -98,9 +98,7 @@ export default function ContactPage() {
                 <Mail className="h-8 w-8 text-primary" />
               </div>
               <h3 className="text-xl font-bold mb-3">Email</h3>
-              <p className="text-muted-foreground">info@hasogroup.com</p>
-              <p className="text-muted-foreground">ceo@hasogroup.com</p>
-              <p className="text-muted-foreground">healthaffairsinitiative@hasogroup.com</p>
+              <p className="text-muted-foreground">info@hayi.org</p>
             </motion.div>
             <motion.div
               initial={{ y: 50, opacity: 0 }}
@@ -321,10 +319,10 @@ export default function ContactPage() {
                 viewport={{ once: true }}
                 className="border rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300"
               >
-                <h3 className="text-xl font-bold mb-2">How can I volunteer with HASO GROUP?</h3>
+                <h3 className="text-xl font-bold mb-2">How can I become a peer educator with HAYi?</h3>
                 <p className="text-muted-foreground">
-                  You can volunteer with HASO GROUP by visiting our Get Involved page and filling out the volunteer application
-                  form. We have various opportunities available, from community outreach to digital content creation.
+                  You can become a peer educator with HAYi by visiting our Get Involved page and filling out the peer educator application
+                  form. We have various opportunities available, from SRHR education to mental health support and GBV prevention.
                 </p>
               </motion.div>
 
@@ -337,8 +335,8 @@ export default function ContactPage() {
               >
                 <h3 className="text-xl font-bold mb-2">How are donations used?</h3>
                 <p className="text-muted-foreground">
-                  Donations to HASO GROUP directly support our programs in health education, digital health solutions,
-                  advocacy, and leadership development. We ensure transparency in how funds are allocated and provide
+                  Donations to HAYi directly support our programs in sexual and reproductive health, mental health, GBV prevention,
+                  leadership development, and youth empowerment. We ensure transparency in how funds are allocated and provide
                   regular updates to our donors.
                 </p>
               </motion.div>
@@ -350,10 +348,10 @@ export default function ContactPage() {
                 viewport={{ once: true }}
                 className="border rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300"
               >
-                <h3 className="text-xl font-bold mb-2">Can organizations partner with HASO GROUP?</h3>
+                <h3 className="text-xl font-bold mb-2">Can organizations partner with HAYi?</h3>
                 <p className="text-muted-foreground">
-                  Yes, we welcome partnerships with organizations that share our vision for health equity. Please
-                  contact us through this form or email us at partnerships@HASO GROUPrwanda.org to discuss potential
+                  Yes, we welcome partnerships with schools, government, and NGOs that share our vision for youth health and empowerment. Please
+                  contact us through this form or email us at info@hayi.org to discuss potential
                   collaboration opportunities.
                 </p>
               </motion.div>
@@ -365,10 +363,10 @@ export default function ContactPage() {
                 viewport={{ once: true }}
                 className="border rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300"
               >
-                <h3 className="text-xl font-bold mb-2">Where does HASO GROUP operate?</h3>
+                <h3 className="text-xl font-bold mb-2">Where does HAYi operate?</h3>
                 <p className="text-muted-foreground">
-                  HASO GROUP primarily operates in Rwanda, with a focus on underserved communities. However, our digital health
-                  resources and advocacy work have a broader reach across the region.
+                  HAYi primarily operates in Rwanda, with programs in Gatsibo, Karongi, and Nyarugenge districts. Our focus is on empowering youth
+                  in schools and communities across the country.
                 </p>
               </motion.div>
             </div>

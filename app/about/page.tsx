@@ -57,7 +57,7 @@ export default function AboutPage() {
               transition={{ delay: 0.8, duration: 0.8 }}
               className="text-lg md:text-xl"
             >
-              Learn about our mission, vision, values, and the dedicated team working to advance health equity in
+              Learn about our mission, vision, values, and the dedicated team working to empower youth and advance health equity in
               Rwanda.
             </motion.p>
           </motion.div>
@@ -74,7 +74,7 @@ export default function AboutPage() {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-3xl font-bold tracking-tight md:text-4xl mb-4">Our Story</h2>
+              <h2 className="text-3xl font-bold tracking-tight md:text-4xl mb-4">Who We Are</h2>
               <div className="space-y-3">
                 <motion.p
                   initial={{ opacity: 0, y: 20 }}
@@ -83,41 +83,15 @@ export default function AboutPage() {
                   viewport={{ once: true }}
                   className="text-muted-foreground"
                 >
-                  Born out of a bold vision to bridge gaps in Africa’s health systems, <motion.span
+                  Health Affairs for Youth Initiatives (<motion.span
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.1 }}
                     viewport={{ once: true }}
-                    className="text-primary mx-1"
+                    className="text-primary mx-1 font-bold"
                   >
-                    HASO Group (Health Affairs & Social Opportunities)
-                  </motion.span> was founded to offer smart, scalable, and sustainable non-clinical solutions that strengthen healthcare delivery and promote social impact.
-                </motion.p>
-
-                <motion.p
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.2 }}
-                  viewport={{ once: true }}
-                  className="text-muted-foreground"
-                >
-                  Our journey began with a deep belief: that health is not just about hospitals and treatments—it's about systems, people, and the invisible backbone of operations that keeps care running effectively. From navigating complex health operations to driving digital innovation and advocating for equity, HASO Group was created to fill critical gaps in healthcare management, research, and workforce development.
-                </motion.p>
-                <motion.p
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.2 }}
-                  viewport={{ once: true }}
-                  className="text-muted-foreground"
-                >
-                  Today, we operate at the intersection of health, business, and social innovation—providing expert non-clinical services, outsourcing solutions, medical tourism support, and strategic advisory for both public and private sector health actors. Our social impact arm, the
-                  <motion.span
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 0.2 }}
-                    viewport={{ once: true }}
-                    className="text-primary font-bold"
-                  > Health Affairs Initiative</motion.span>, leads programs in health education, youth empowerment, digital health advocacy, and leadership development.
+                    HAYi
+                  </motion.span>) is the <strong>social impact arm of HASO GROUP</strong>, committed to advancing <strong>youth health, gender equity, and empowerment</strong>. Through evidence-based programs, community engagement, and youth-led innovation, HAYi ensures all young people have access to the <strong>knowledge, services, and opportunities</strong> they need to thrive.
                 </motion.p>
               </div>
             </motion.div>
@@ -155,7 +129,7 @@ export default function AboutPage() {
             >
               <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
               <p className="text-muted-foreground">
-              HASO Group exists to bridge the gap between institutional needs and underutilized talent by delivering expert-led, non clinical health services and professional outsourcing solutions. We support institutions and empower individuals through quality service delivery, workforce development, and access to meaningful work. 
+              To promote <strong>inclusive youth health and well-being</strong> through education, advocacy, innovation, and community-driven programs, ensuring that all young people—regardless of gender, background, or ability—have equitable access to resources to thrive.
               </p>
             </motion.div>
             <motion.div
@@ -167,7 +141,7 @@ export default function AboutPage() {
             >
               <h2 className="text-2xl font-bold mb-4">Our Vision</h2>
               <p className="text-muted-foreground">
-              To be a leading Network that connects healthcare professionals with impactful career opportunities, while empowering institutions with the tools, and services they need to excel in health and social sectors.
+              A Rwanda where <strong>all young people are healthy, empowered, and socially included</strong>, with access to quality health services, supportive environments, and economic opportunities.
               </p>
             </motion.div>
           </div>
@@ -179,7 +153,7 @@ export default function AboutPage() {
   <div className="container mx-auto px-4">
     <SectionTitle
       title="Our Values"
-      subtitle="At HASO Group, our core values reflect our dedication to impactful, inclusive, and innovative work. These principles guide every aspect of our mission and shape the way we serve communities."
+      subtitle="At HAYi, our core values reflect our dedication to impactful, inclusive, and innovative work. These principles guide every aspect of our mission and shape the way we serve communities."
       backgroundImage="/placeholder.svg?height=300&width=1920"
     />
 
@@ -194,9 +168,19 @@ export default function AboutPage() {
         variants={itemVariants}
         className="bg-muted/50 p-8 rounded-lg hover:shadow-md transition-shadow duration-300"
       >
-        <h3 className="text-xl font-bold mb-3">Excellence</h3>
+        <h3 className="text-xl font-bold mb-3">Inclusivity</h3>
         <p className="text-muted-foreground">
-          We strive for the highest standards in everything we do, ensuring impactful, sustainable outcomes.
+          We ensure all young people, regardless of gender, background, or ability, have equitable access to resources and opportunities.
+        </p>
+      </motion.div>
+
+      <motion.div
+        variants={itemVariants}
+        className="bg-muted/50 p-8 rounded-lg hover:shadow-md transition-shadow duration-300"
+      >
+        <h3 className="text-xl font-bold mb-3">Integrity</h3>
+        <p className="text-muted-foreground">
+          We operate with honesty, transparency, and ethical practices in all our programs and relationships.
         </p>
       </motion.div>
 
@@ -206,7 +190,7 @@ export default function AboutPage() {
       >
         <h3 className="text-xl font-bold mb-3">Empowerment</h3>
         <p className="text-muted-foreground">
-          We equip individuals and communities with the tools, knowledge, and confidence to shape their own futures.
+          We equip youth with the tools, knowledge, and confidence to shape their own futures and make informed decisions.
         </p>
       </motion.div>
 
@@ -216,7 +200,7 @@ export default function AboutPage() {
       >
         <h3 className="text-xl font-bold mb-3">Innovation</h3>
         <p className="text-muted-foreground">
-          We embrace creative problem-solving, leveraging technology and new ideas to tackle complex challenges.
+          We embrace creative problem-solving, leveraging technology and new ideas to tackle complex health challenges.
         </p>
       </motion.div>
 
@@ -226,27 +210,7 @@ export default function AboutPage() {
       >
         <h3 className="text-xl font-bold mb-3">Collaboration</h3>
         <p className="text-muted-foreground">
-          We build strong partnerships and inclusive teams, recognizing that shared goals lead to stronger impact.
-        </p>
-      </motion.div>
-
-      <motion.div
-        variants={itemVariants}
-        className="bg-muted/50 p-8 rounded-lg hover:shadow-md transition-shadow duration-300"
-      >
-        <h3 className="text-xl font-bold mb-3">Equity</h3>
-        <p className="text-muted-foreground">
-          We champion fairness and justice, ensuring every individual has access to the resources and opportunities they need.
-        </p>
-      </motion.div>
-
-      <motion.div
-        variants={itemVariants}
-        className="bg-muted/50 p-8 rounded-lg hover:shadow-md transition-shadow duration-300"
-      >
-        <h3 className="text-xl font-bold mb-3">Accountability</h3>
-        <p className="text-muted-foreground">
-          We are responsible stewards of our mission, resources, and relationships, committed to transparency and trust.
+          We build strong partnerships with schools, government, NGOs, and communities, recognizing that shared goals lead to stronger impact.
         </p>
       </motion.div>
     </motion.div>
@@ -262,7 +226,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 relative z-10">
           <SectionTitle
             title="Meet Our Team"
-            subtitle="Our team is composed of passionate, dedicated professionals from diverse backgrounds, united by a common goal: advancing health equity."
+            subtitle="Meet the founding members driving HAYi's mission to empower youth, advance health equity, and create lasting impact."
             backgroundImage="/placeholder.svg?height=300&width=1920"
             light
           />
@@ -298,7 +262,7 @@ export default function AboutPage() {
                   viewport={{ once: true }}
                   className="text-2xl font-bold mb-1"
                 >
-                  Samuel Habimana, MSc
+                  Samuel Habimana
                 </motion.h3>
                 <motion.p
                   initial={{ opacity: 0 }}
@@ -316,7 +280,7 @@ export default function AboutPage() {
                     transition={{ duration: 0.5, delay: 0.2 }}
                     viewport={{ once: true }}
                   >
-                    With over a decade of experience in health advocacy, Operations, research, and community-driven solutions, Samuel leads efforts to tackle critical health challenges using technology-driven advocacy, community-centered solutions, and empowerment programs. He has successfully designed and implemented several community health projects focused on gender equality and reproductive health using digital space, sports, and creative arts. His research includes impactful studies on intergenerational dialogues aimed at reducing conflicts between teen mothers and their families.
+                    A visionary leader with expertise in education, health care management, business, and global health delivery. He has extensive experience designing, implementing, and scaling health and youth empowerment initiatives. HAYi delivers innovative programs that improve youth health, promote gender equity, and strengthen communities.
                   </motion.p>
                   <motion.p
                     initial={{ opacity: 0, y: 10 }}
@@ -324,7 +288,7 @@ export default function AboutPage() {
                     transition={{ duration: 0.5, delay: 0.3 }}
                     viewport={{ once: true }}
                   >
-                    Samuel holds a Master of Science in Global Health Delivery (MSc-GHD) with a specialization in Gender, Sexual, and Reproductive Health from the University of Global Health Equity (UGHE) and a Bachelor of Arts in Healthcare Management from Southern New Hampshire University. His expertise spans advocacy, operations, health program development, and leadership in global health. In addition to his work with HAI, Samuel has partnered with international and regional organizations to empower youth, promote gender equality, and enhance healthcare access across Rwanda and beyond. A passionate innovator and dynamic leader, Samuel believes in the power of collaboration and creative solutions to drive lasting health impact.
+                    A passionate advocate for adolescent health, mentorship, and inclusive leadership, he works with schools, partners, and civil society to create lasting impact for young people.
                   </motion.p>
                 </div>
               </div>

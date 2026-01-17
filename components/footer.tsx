@@ -42,16 +42,14 @@ export default function Footer() {
           <motion.div variants={itemVariants}>
             <Link href="/" className="flex items-center mb-6">
               <Image
-                src="/haso-group.png"
-                alt="Health Affairs Initiative Logo"
-                width={110}
-                height={30}
-                className=" bg-white/90 rounded-lg p-1"
+                src="/HAYI LOGO-02.png"
+                alt="HAYi - Health Affairs for Youth Initiatives Logo"
+                width={140}
+                height={40}
               />
             </Link>
             <p className="mb-6 text-sm opacity-90">
-              Driving positive change in global health by empowering communities, advancing health equity, and
-              leveraging technology for impact.
+              Health Affairs for Youth Initiatives (HAYi) is the social impact arm of HASO GROUP, committed to advancing youth health, gender equity, and empowerment in Rwanda.
             </p>
             <div className="flex space-x-4">
               <Link href="https://facebook.com" className="hover:text-white/80 transition-colors" aria-label="Facebook">
@@ -85,17 +83,17 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/programs" className="hover:text-white/80 transition-colors">
-                  Our Solutions
-                </Link>
-              </li>
-              <li>
-                <Link href="/impact" className="hover:text-white/80 transition-colors">
-                  Our Impact
+                  Programs
                 </Link>
               </li>
               <li>
                 <Link href="/media" className="hover:text-white/80 transition-colors">
-                  Media Center
+                  News & Media
+                </Link>
+              </li>
+              <li>
+                <Link href="/about#team" className="hover:text-white/80 transition-colors">
+                  Our Team
                 </Link>
               </li>
               <li>
@@ -114,23 +112,23 @@ export default function Footer() {
             <h3 className="font-bold mb-6">Programs</h3>
             <ul className="space-y-3 text-sm">
               <li>
-                <Link href="/programs#education" className="hover:text-white/80 transition-colors">
-                  Health Education & Awareness
+                <Link href="/programs#menya-wirinde-ubeho" className="hover:text-white/80 transition-colors">
+                  Menya, Wirinde, Ubeho
                 </Link>
               </li>
               <li>
-                <Link href="/programs#digital" className="hover:text-white/80 transition-colors">
-                  Digital Health Solutions
+                <Link href="/programs#mental-health" className="hover:text-white/80 transition-colors">
+                  Mental Health & Wellbeing
                 </Link>
               </li>
               <li>
-                <Link href="/programs#advocacy" className="hover:text-white/80 transition-colors">
-                  Advocacy & Leadership
+                <Link href="/programs#gbv-prevention" className="hover:text-white/80 transition-colors">
+                  GBV Prevention & Safe Spaces
                 </Link>
               </li>
               <li>
-                <Link href="/programs#sustainable" className="hover:text-white/80 transition-colors">
-                  Sustainable Health Impact
+                <Link href="/programs#leadership" className="hover:text-white/80 transition-colors">
+                  Leadership & Advocacy
                 </Link>
               </li>
             </ul>
@@ -155,7 +153,7 @@ export default function Footer() {
           viewport={{ once: true }}
           className="mt-12 border-t border-white/20 pt-6 text-center text-sm opacity-90"
         >
-          <p>&copy; {new Date().getFullYear()} HASO Group Rwanda. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Health Affairs for Youth Initiatives (HAYi) – All Rights Reserved</p>
         </motion.div>
       </div>
     </footer>

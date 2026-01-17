@@ -43,8 +43,8 @@ export default function Header() {
         >
           <Link href="/" className="flex items-center">
             <Image
-              src="/haso-group.png"
-              alt="Health Affairs Initiative Logo"
+              src="/HAYI LOGO-01.png"
+              alt="HAYi - Health Affairs for Youth Initiatives Logo"
               width={240}
               height={60}
               className="h-32 w-auto"
@@ -87,25 +87,13 @@ export default function Header() {
               href="/programs"
               className={`text-sm font-medium transition-colors hover:text-primary ${scrolled ? "text-foreground" : "text-primary"}`}
             >
-              Solutions
+              Programs
             </Link>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
-          >
-            <Link
-              href="/impact"
-              className={`text-sm font-medium transition-colors hover:text-primary ${scrolled ? "text-foreground" : "text-primary"}`}
-            >
-              Impact
-            </Link>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.5 }}
           >
             <Link
               href="/media"
@@ -183,13 +171,6 @@ export default function Header() {
                 onClick={toggleMenu}
               >
                 Programs
-              </Link>
-              <Link
-                href="/impact"
-                className="rounded px-2 py-2 text-sm font-medium transition-colors hover:bg-muted"
-                onClick={toggleMenu}
-              >
-                Impact
               </Link>
               <Link
                 href="/media"

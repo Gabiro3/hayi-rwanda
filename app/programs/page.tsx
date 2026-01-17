@@ -28,7 +28,7 @@ export default function SolutionsPage() {
             className="max-w-3xl"
           >
             <AnimatedText
-              text="Our  Solutions"
+              text="Our  Programs"
               className="text-4xl font-bold tracking-tight md:text-5xl mb-6"
               delay={0.3}
             />
@@ -38,14 +38,14 @@ export default function SolutionsPage() {
               transition={{ delay: 0.8, duration: 0.8 }}
               className="text-lg md:text-xl"
             >
-              At HASO Group, we offer integrated, non-clinical solutions that strengthen health systems, empower professionals, and accelerate impact across Africa and beyond.
+              HAYi implements targeted programs that address sexual and reproductive health, mental health, healthy lifestyles, GBV prevention, digital innovation, leadership, and socio-economic empowerment.
             </motion.p>
           </motion.div>
         </div>
       </section>
 
-      {/* Solution 1: Workforce Solutions */}
-<section id="workforce" className="py-20 md:py-28 bg-white">
+      {/* Featured Program: Menya, Wirinde, Ubeho */}
+<section id="menya-wirinde-ubeho" className="py-20 md:py-28 bg-white">
   <div className="container mx-auto px-4">
     <div className="grid gap-12 lg:grid-cols-2 items-center">
       <motion.div
@@ -55,23 +55,23 @@ export default function SolutionsPage() {
         viewport={{ once: true }}
       >
         <div className="inline-flex items-center justify-center rounded-full bg-primary/10 p-3 mb-6">
-          <Users className="h-8 w-8 text-primary" />
+          <BookOpen className="h-8 w-8 text-primary" />
         </div>
-        <h2 className="text-3xl font-bold tracking-tight md:text-4xl mb-4">Workforce Solutions</h2>
+        <h2 className="text-3xl font-bold tracking-tight md:text-4xl mb-4">Menya, Wirinde, Ubeho</h2>
         <p className="text-lg text-muted-foreground mb-6">
-          We recruit, deploy, and manage skilled non-clinical healthcare professionals—ranging from project managers to health informatics experts.
+          A school-based initiative empowering learners with accurate SRHR knowledge to make safe and informed choices.
         </p>
         <div className="space-y-6">
           <motion.div className="space-y-2">
-            <h3 className="text-xl font-medium">Outsourcing & Staffing</h3>
+            <h3 className="text-xl font-medium">Target Group</h3>
             <p className="text-muted-foreground">
-              We offer flexible hiring models for non-clinical healthcare roles across various specialties and regions.
+              Students in secondary schools and out-of-school youth in Gatsibo, Karongi, and Nyarugenge districts.
             </p>
           </motion.div>
           <motion.div className="space-y-2">
-            <h3 className="text-xl font-medium">Managed Services</h3>
+            <h3 className="text-xl font-medium">Key Activities</h3>
             <p className="text-muted-foreground">
-              End-to-end talent management and team operations to help health systems scale effectively.
+              Peer educator training, SRHR club strengthening, expert-led sessions, monitoring and evaluation, and endline reporting. Duration: 6 months.
             </p>
           </motion.div>
         </div>
@@ -83,8 +83,8 @@ export default function SolutionsPage() {
         viewport={{ once: true }}
       >
         <Image
-          src="/prog_1.jpg"
-          alt="Workforce Solutions"
+          src="/edut.JPG"
+          alt="Menya, Wirinde, Ubeho Program"
           width={800}
           height={600}
           className="rounded-xl object-cover shadow-lg"
@@ -93,8 +93,8 @@ export default function SolutionsPage() {
     </div>
   </div>
 </section>
-{/* Solution 2: Healthcare BPO */}
-<section id="bpo" className="py-20 md:py-28 bg-muted relative">
+{/* Program 2: Mental Health & Wellbeing */}
+<section id="mental-health" className="py-20 md:py-28 bg-muted relative">
   <div className="absolute inset-0 z-0 opacity-10">
     <Image src="/edut.JPG" alt="Background texture" fill className="object-cover" />
   </div>
@@ -109,7 +109,7 @@ export default function SolutionsPage() {
       >
         <Image
           src="/edut.JPG"
-          alt="Healthcare BPO"
+          alt="Mental Health & Wellbeing"
           width={800}
           height={600}
           className="rounded-xl object-cover shadow-lg"
@@ -125,21 +125,21 @@ export default function SolutionsPage() {
         <div className="inline-flex items-center justify-center rounded-full bg-primary/10 p-3 mb-6">
           <Heart className="h-8 w-8 text-primary" />
         </div>
-        <h2 className="text-3xl font-bold tracking-tight md:text-4xl mb-4">Healthcare BPO</h2>
+        <h2 className="text-3xl font-bold tracking-tight md:text-4xl mb-4">Mental Health & Wellbeing</h2>
         <p className="text-lg text-muted-foreground mb-6">
-          We streamline non-clinical operations like customer support, admin tasks, and data management so healthcare providers can focus on care.
+          Supporting youth mental health through awareness, counseling services, and safe spaces for dialogue and support.
         </p>
         <div className="space-y-6">
           <motion.div className="space-y-2">
-            <h3 className="text-xl font-medium">Revenue Cycle & Claims Management</h3>
+            <h3 className="text-xl font-medium">Awareness & Education</h3>
             <p className="text-muted-foreground">
-              From billing to collections, we manage healthcare finance workflows to improve performance and ROI.
+              Programs that raise awareness about mental health issues and reduce stigma among youth.
             </p>
           </motion.div>
           <motion.div className="space-y-2">
-            <h3 className="text-xl font-medium">Customer & Admin Support</h3>
+            <h3 className="text-xl font-medium">Counseling & Support</h3>
             <p className="text-muted-foreground">
-              We handle high-volume patient communication and scheduling through omni-channel support teams.
+              Access to counseling services and peer support networks for young people facing mental health challenges.
             </p>
           </motion.div>
         </div>
@@ -147,8 +147,8 @@ export default function SolutionsPage() {
     </div>
   </div>
 </section>
-{/* Solution 3: Research, Advisory & Innovation */}
-<section id="research" className="py-20 md:py-28 bg-white">
+{/* Program 3: GBV Prevention & Safe Spaces */}
+<section id="gbv-prevention" className="py-20 md:py-28 bg-white">
   <div className="container mx-auto px-4">
     <div className="grid gap-12 lg:grid-cols-2 items-center">
       <motion.div
@@ -158,23 +158,23 @@ export default function SolutionsPage() {
         viewport={{ once: true }}
       >
         <div className="inline-flex items-center justify-center rounded-full bg-primary/10 p-3 mb-6">
-          <BookOpen className="h-8 w-8 text-primary" />
+          <Users className="h-8 w-8 text-primary" />
         </div>
-        <h2 className="text-3xl font-bold tracking-tight md:text-4xl mb-4">Research, Advisory & Innovation</h2>
+        <h2 className="text-3xl font-bold tracking-tight md:text-4xl mb-4">GBV Prevention & Safe Spaces</h2>
         <p className="text-lg text-muted-foreground mb-6">
-          We help public and private health organizations design, test, and scale evidence-based solutions through expert research and advisory.
+          Creating safe spaces and implementing programs to prevent gender-based violence and support survivors through education and advocacy.
         </p>
         <div className="space-y-6">
           <motion.div className="space-y-2">
-            <h3 className="text-xl font-medium">Health Systems Research</h3>
+            <h3 className="text-xl font-medium">Prevention Programs</h3>
             <p className="text-muted-foreground">
-              We conduct operational and implementation research to drive better policies and outcomes.
+              Educational initiatives and awareness campaigns to prevent gender-based violence in schools and communities.
             </p>
           </motion.div>
           <motion.div className="space-y-2">
-            <h3 className="text-xl font-medium">Innovation Pilots</h3>
+            <h3 className="text-xl font-medium">Safe Spaces</h3>
             <p className="text-muted-foreground">
-              From tech prototypes to service delivery models, we support ideation and pilot testing.
+              Facilitating safe spaces for intergenerational dialogues on health rights and gender equality.
             </p>
           </motion.div>
         </div>
@@ -186,8 +186,8 @@ export default function SolutionsPage() {
         viewport={{ once: true }}
       >
         <Image
-          src="/prog_2.jpg"
-          alt="Research & Innovation"
+          src="/gbv.jpg"
+          alt="GBV Prevention & Safe Spaces"
           width={800}
           height={600}
           className="rounded-xl object-cover shadow-lg"
@@ -196,8 +196,8 @@ export default function SolutionsPage() {
     </div>
   </div>
 </section>
-{/* Solution 4: Medical Tourism Facilitation */}
-<section id="tourism" className="py-20 md:py-28 bg-muted relative">
+{/* Program 4: Leadership, Advocacy & Policy Engagement */}
+<section id="leadership" className="py-20 md:py-28 bg-muted relative">
   <div className="absolute inset-0 z-0 opacity-10">
     <Image src="/sustain.jpg" alt="Background texture" fill className="object-cover" />
   </div>
@@ -212,7 +212,7 @@ export default function SolutionsPage() {
       >
         <Image
           src="/sustain.jpg"
-          alt="Medical Tourism"
+          alt="Leadership & Advocacy"
           width={800}
           height={600}
           className="rounded-xl object-cover shadow-lg"
@@ -228,21 +228,21 @@ export default function SolutionsPage() {
         <div className="inline-flex items-center justify-center rounded-full bg-primary/10 p-3 mb-6">
           <Award className="h-8 w-8 text-primary" />
         </div>
-        <h2 className="text-3xl font-bold tracking-tight md:text-4xl mb-4">Medical Tourism Facilitation</h2>
+        <h2 className="text-3xl font-bold tracking-tight md:text-4xl mb-4">Leadership, Advocacy & Policy Engagement</h2>
         <p className="text-lg text-muted-foreground mb-6">
-          We connect international patients with top-tier African healthcare providers, managing travel and treatment logistics.
+          Developing youth leadership skills, advocacy capabilities, and engaging with policy makers to advance youth health and rights.
         </p>
         <div className="space-y-6">
           <motion.div className="space-y-2">
-            <h3 className="text-xl font-medium">Cross-Border Coordination</h3>
+            <h3 className="text-xl font-medium">Youth Leadership Development</h3>
             <p className="text-muted-foreground">
-              We handle scheduling, travel, translation, and pre/post care to ensure a seamless medical journey.
+              Training programs that empower youth to become health advocates and leaders in their communities.
             </p>
           </motion.div>
           <motion.div className="space-y-2">
-            <h3 className="text-xl font-medium">Trusted Provider Network</h3>
+            <h3 className="text-xl font-medium">Policy Dialogue & Advocacy</h3>
             <p className="text-muted-foreground">
-              We partner with accredited hospitals and specialists across Africa to guarantee high-quality care.
+              Engaging with policy makers and stakeholders to advance inclusive health policies and youth rights.
             </p>
           </motion.div>
         </div>
@@ -272,7 +272,7 @@ export default function SolutionsPage() {
             viewport={{ once: true }}
             className="text-3xl font-bold tracking-tight md:text-4xl mb-6"
           >
-            Support Our Solutions
+            Support Our Programs
           </motion.h2>
           <motion.p
             initial={{ y: 20, opacity: 0 }}
@@ -281,8 +281,8 @@ export default function SolutionsPage() {
             viewport={{ once: true }}
             className="text-lg mb-8 max-w-2xl mx-auto"
           >
-            Your support can help us expand our Solutions and reach more communities in need. Join us in our mission to
-            advance health equity in Rwanda.
+            Your support can help us expand our programs and reach more youth in need. Join us in our mission to
+            empower youth and advance health equity in Rwanda.
           </motion.p>
           <motion.div
             initial={{ y: 20, opacity: 0 }}

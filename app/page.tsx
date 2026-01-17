@@ -66,7 +66,7 @@ export default function Home() {
             className="mx-auto max-w-4xl text-center"
           >
             <AnimatedText
-              text="Empowering  Communities,  Advancing  Health  Equity  through  Digital  Innovation."
+              text="Empowering  Youth  for  a  Healthier  Tomorrow"
               className="mb-6 text-3xl font-bold tracking-tight md:text-5xl lg:text-5xl uppercase"
               delay={0.5}
             />
@@ -76,8 +76,7 @@ export default function Home() {
               transition={{ delay: 1.2, duration: 0.8 }}
               className="mb-8 text-lg md:text-xl"
             >
-              Driving positive change in global health by empowering communities, advancing health equity, and
-              leveraging technology for impact in Rwanda.
+              Advancing health equity, gender equity, and youth empowerment in Rwanda through education, advocacy, and innovation.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -86,7 +85,7 @@ export default function Home() {
               className="flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0 justify-center"
             >
               <Button asChild size="lg" className="gradient-bg text-white hover:bg-secondary/90">
-                <Link href="/about">Explore Our Services</Link>
+                <Link href="/programs">Explore Our Programs</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white text-primary hover:bg-primary/10 hover:text-white">
                 <Link href="/get-involved">Get Involved</Link>
@@ -100,8 +99,8 @@ export default function Home() {
       <section className="py-20 md:py-28 bg-white">
         <div className="container mx-auto px-4">
           <SectionTitle
-            title="Welcome to HASO Group"
-            subtitle="Empowering non-clinical healthcare professionals and institutions through innovative solutions for health affairs and social opportunities. Join us in transforming healthcare workforces, enabling talent, and providing quality support services to drive impact."
+            title="About HAYi"
+            subtitle="Health Affairs for Youth Initiatives (HAYi) is the social impact arm of HASO GROUP, committed to advancing youth health, gender equity, and empowerment. Through evidence-based programs, community engagement, and youth-led innovation, HAYi ensures all young people have access to the knowledge, services, and opportunities they need to thrive."
             backgroundImage="/placeholder.svg?height=300&width=1920"
           />
 
@@ -119,9 +118,21 @@ export default function Home() {
               <div className="mb-6 rounded-full bg-primary/10 p-4">
                 <BookOpen className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="mb-3 text-xl font-medium">Workforce Solutions</h3>
+              <h3 className="mb-3 text-xl font-medium">Sexual & Reproductive Health</h3>
               <p className="text-muted-foreground">
-              We provide skilled non-clinical healthcare professionals through staffing, outsourcing, and managed services to help organizations scale efficiently.
+              Empowering learners with accurate SRHR knowledge to make safe and informed choices through school-based initiatives and peer education.
+              </p>
+            </motion.div>
+            <motion.div
+              variants={itemVariants}
+              className="flex flex-col items-center text-center p-8 rounded-lg bg-muted/50 hover:shadow-lg transition-shadow duration-300"
+            >
+              <div className="mb-6 rounded-full bg-primary/10 p-4">
+                <Heart className="h-8 w-8 text-primary" />
+              </div>
+              <h3 className="mb-3 text-xl font-medium">Mental Health & Wellbeing</h3>
+              <p className="text-muted-foreground">
+              Supporting youth mental health through awareness, counseling services, and safe spaces for dialogue and support.
               </p>
             </motion.div>
             <motion.div
@@ -131,9 +142,9 @@ export default function Home() {
               <div className="mb-6 rounded-full bg-primary/10 p-4">
                 <Users className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="mb-3 text-xl font-medium">Healthcare BPO</h3>
+              <h3 className="mb-3 text-xl font-medium">GBV Prevention & Safe Spaces</h3>
               <p className="text-muted-foreground">
-              We optimize non-clinical operations like admin, customer service, and revenue cycle management, improving efficiency and allowing providers to focus on care.
+              Creating safe spaces and implementing programs to prevent gender-based violence and support survivors through education and advocacy.
               </p>
             </motion.div>
             <motion.div
@@ -141,23 +152,11 @@ export default function Home() {
               className="flex flex-col items-center text-center p-8 rounded-lg bg-muted/50 hover:shadow-lg transition-shadow duration-300"
             >
               <div className="mb-6 rounded-full bg-primary/10 p-4">
-                <FlaskConical className="h-8 w-8 text-primary" />
+                <Award className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="mb-3 text-xl font-medium">Research, Advisory & Innovation</h3>
+              <h3 className="mb-3 text-xl font-medium">Leadership & Empowerment</h3>
               <p className="text-muted-foreground">
-              We deliver strategic insights and implementation support for health programs through research, advisory services, and innovation for governments and organizations.
-              </p>
-            </motion.div>
-            <motion.div
-              variants={itemVariants}
-              className="flex flex-col items-center text-center p-8 rounded-lg bg-muted/50 hover:shadow-lg transition-shadow duration-300"
-            >
-              <div className="mb-6 rounded-full bg-primary/10 p-4">
-                <LucideBinoculars className="h-8 w-8 text-primary" />
-              </div>
-              <h3 className="mb-3 text-xl font-medium">Medical Tourism Facilitation</h3>
-              <p className="text-muted-foreground">
-              We manage comprehensive medical tourism services, linking international patients with African healthcare providers for seamless, high-quality care experiences.
+              Developing youth leadership skills, advocacy capabilities, and socio-economic opportunities for sustainable impact.
               </p>
             </motion.div>
           </motion.div>
@@ -172,7 +171,7 @@ export default function Home() {
         <div className="container mx-auto px-4 relative z-10">
           <SectionTitle
             title="Our Impact"
-            subtitle="Through our Health Affairs Initivative, we have already transformed thousands of lives across Rwanda and beyond."
+            subtitle="Through our programs, we have already transformed thousands of lives across Rwanda, empowering youth and advancing health equity."
             backgroundImage="/placeholder.svg?height=300&width=1920"
             light
           />
@@ -301,10 +300,9 @@ export default function Home() {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-3xl font-bold tracking-tight md:text-4xl mb-6">Health Education & Awareness</h2>
+              <h2 className="text-3xl font-bold tracking-tight md:text-4xl mb-6">Menya, Wirinde, Ubeho</h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Our flagship program focuses on providing accessible health education through digital platforms and
-                community engagement.
+                A school-based initiative empowering learners with accurate SRHR knowledge to make safe and informed choices.
               </p>
               <ul className="space-y-6 mb-8">
                 <motion.li
@@ -316,8 +314,7 @@ export default function Home() {
                 >
                   <ChevronRight className="mr-2 h-5 w-5 text-secondary flex-shrink-0 mt-0.5" />
                   <div>
-                    <span className="font-medium">Digital Health Literacy for All</span> – SRH, maternal health, and
-                    disease prevention education via SMS, e-learning, podcasts, and radio.
+                    <span className="font-medium">Target Group:</span> Students in secondary schools and out-of-school youth in Gatsibo, Karongi, and Nyarugenge districts.
                   </div>
                 </motion.li>
                 <motion.li
@@ -329,8 +326,19 @@ export default function Home() {
                 >
                   <ChevronRight className="mr-2 h-5 w-5 text-secondary flex-shrink-0 mt-0.5" />
                   <div>
-                    <span className="font-medium">My Health, My Rights</span> – Raising awareness on health rights, GBV
-                    prevention, and reproductive health through workshops, training, sports, and creative arts.
+                    <span className="font-medium">Key Activities:</span> Peer educator training, SRHR club strengthening, expert-led sessions, monitoring and evaluation, and endline reporting.
+                  </div>
+                </motion.li>
+                <motion.li
+                  initial={{ x: 20, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 0.5, delay: 0.3 }}
+                  viewport={{ once: true }}
+                  className="flex"
+                >
+                  <ChevronRight className="mr-2 h-5 w-5 text-secondary flex-shrink-0 mt-0.5" />
+                  <div>
+                    <span className="font-medium">Duration:</span> 6 months of comprehensive programming and support.
                   </div>
                 </motion.li>
               </ul>
@@ -493,8 +501,8 @@ export default function Home() {
               viewport={{ once: true }}
               className="text-lg opacity-90"
             >
-              At HAI, we believe in the power of collaboration to achieve our mission. There are several ways you can
-              contribute to our work.
+              At HAYi, we believe in the power of collaboration to achieve our mission. There are several ways you can
+              contribute to our work and help advance youth health and empowerment.
             </motion.p>
           </div>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
@@ -618,7 +626,7 @@ export default function Home() {
                 <Mail className="h-8 w-8 text-primary" />
               </div>
               <h3 className="mb-3 text-xl font-medium">Email</h3>
-              <p className="text-muted-foreground">socialimpact@hasogroup.com</p>
+              <p className="text-muted-foreground">info@hayi.org</p>
             </motion.div>
             <motion.div
               initial={{ y: 30, opacity: 0 }}
