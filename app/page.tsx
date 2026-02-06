@@ -51,8 +51,8 @@ export default function Home() {
       <section className="relative bg-primary/90 text-white min-h-[90vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/hero_bg.jpg"
-            alt="Healthcare workers in Rwanda"
+            src="/students.jpg"
+            alt="Youth empowerment in Rwanda"
             fill
             className="object-cover object-center brightness-50"
             priority
@@ -287,8 +287,8 @@ export default function Home() {
               viewport={{ once: true }}
             >
               <Image
-                src="/edut.JPG"
-                alt="Digital Health Education Program"
+                src="/program_2.jpg"
+                alt="Menya, Wirinde, Ubeho Program"
                 width={800}
                 height={600}
                 className="rounded-xl object-cover shadow-lg"

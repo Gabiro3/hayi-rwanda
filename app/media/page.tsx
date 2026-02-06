@@ -1,17 +1,39 @@
+"use client"
+
+import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, Play, FileText, Newspaper } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { Skeleton } from "@/components/ui/skeleton"
+
+const galleryImages = [
+  "/gallery/_MGE0799.jpg",
+  "/gallery/_MGE0804.jpg",
+  "/gallery/_MGE0842.jpg",
+  "/gallery/_MGE0862.jpg",
+  "/gallery/_MGE0898.jpg",
+  "/gallery/_MGE0902.jpg",
+  "/gallery/_MGE0903.jpg",
+  "/gallery/_MGE0921.jpg",
+  "/gallery/_MGE0924.jpg",
+]
 
 export default function MediaPage() {
+  const [loadedImages, setLoadedImages] = useState<Set<string>>(new Set())
+
+  const handleImageLoad = (src: string) => {
+    setLoadedImages((prev) => new Set(prev).add(src))
+  }
+
   return (
     <div>
       {/* Hero Section */}
       <section className="bg-primary/90 text-white py-16 md:py-24 relative">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/hero_bg.jpg"
-            alt="HAI Rwanda Media"
+            src="/team_1.jpg"
+            alt="HAYi News & Media"
             fill
             className="object-cover opacity-90"
           />
@@ -126,70 +148,27 @@ export default function MediaPage() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            <div className="aspect-square relative rounded-lg overflow-hidden">
-              <Image
-                src="/ga_1.png"
-                alt="Gallery Image"
-                fill
-                className="object-cover hover:scale-105 transition-transform"
-              />
-            </div>
-            <div className="aspect-square relative rounded-lg overflow-hidden">
-              <Image
-                src="ga_3.jpg"
-                alt="Gallery Image"
-                fill
-                className="object-cover hover:scale-105 transition-transform"
-              />
-            </div>
-            <div className="aspect-square relative rounded-lg overflow-hidden">
-              <Image
-                src="/visit.jpg"
-                alt="Gallery Image"
-                fill
-                className="object-cover hover:scale-105 transition-transform"
-              />
-            </div>
-            <div className="aspect-square relative rounded-lg overflow-hidden">
-              <Image
-                src="/ga_4.jpeg"
-                alt="Gallery Image"
-                fill
-                className="object-cover hover:scale-105 transition-transform"
-              />
-            </div>
-            <div className="aspect-square relative rounded-lg overflow-hidden">
-              <Image
-                src="/ga_5.jpg"
-                alt="Gallery Image"
-                fill
-                className="object-cover hover:scale-105 transition-transform"
-              />
-            </div>
-            <div className="aspect-square relative rounded-lg overflow-hidden">
-              <Image
-                src="/ga_6.jpg"
-                alt="Gallery Image"
-                fill
-                className="object-cover hover:scale-105 transition-transform"
-              />
-            </div>
-            <div className="aspect-square relative rounded-lg overflow-hidden">
-              <Image
-                src="/ga_7.jpeg"
-                alt="Gallery Image"
-                fill
-                className="object-cover hover:scale-105 transition-transform"
-              />
-            </div>
-            <div className="aspect-square relative rounded-lg overflow-hidden">
-              <Image
-                src="/ga_8.jpeg"
-                alt="Gallery Image"
-                fill
-                className="object-cover hover:scale-105 transition-transform"
-              />
-            </div>
+            {galleryImages.map((src, index) => {
+              const isLoaded = loadedImages.has(src)
+              return (
+                <div key={src} className="aspect-square relative rounded-lg overflow-hidden bg-muted">
+                  {!isLoaded && (
+                    <Skeleton className="absolute inset-0 w-full h-full rounded-lg" />
+                  )}
+                  <Image
+                    src={src}
+                    alt={`Gallery Image ${index + 1}`}
+                    fill
+                    loading="lazy"
+                    className={`object-cover hover:scale-105 transition-all duration-300 ${
+                      isLoaded ? "opacity-100" : "opacity-0"
+                    }`}
+                    onLoad={() => handleImageLoad(src)}
+                    sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                  />
+                </div>
+              )
+            })}
           </div>
 
           <div className="text-center mt-10">

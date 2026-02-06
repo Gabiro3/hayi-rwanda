@@ -56,6 +56,13 @@ export const teamMembers = [
         description2: ``,
       },
       {
+        name: "Wellars Mvuyekure",
+        title: "Founding Member",
+        imageUrl: "/Wellars Mvuyekure.JPG",
+        description1: `Public health and Gender/SRHR specialist focused on advancing health equity, project management, and community-driven interventions.`,
+        description2: ``,
+      },
+      {
         name: "Dr. Florence Dusabimana",
         title: "Founding Member",
         imageUrl: "/Dr Florence Dusabimana.jpeg",
@@ -74,13 +81,6 @@ export const teamMembers = [
         title: "Founding Member",
         imageUrl: "/Janviere Iradukunda.jpeg",
         description1: `Procurement and logistics specialist expanding expertise in communication management, supporting organizational operations and impact-driven strategies.`,
-        description2: ``,
-      },
-      {
-        name: "Wellars Mvuyekure",
-        title: "Founding Member",
-        imageUrl: "/Wellars Mvuyekure.JPG",
-        description1: `Public health and Gender/SRHR specialist focused on advancing health equity, project management, and community-driven interventions.`,
         description2: ``,
       },
   ];  

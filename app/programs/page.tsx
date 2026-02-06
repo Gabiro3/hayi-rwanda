@@ -14,8 +14,8 @@ export default function SolutionsPage() {
       <section className="bg-primary/90 text-white py-20 md:py-28 relative">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/prog_3.jpg"
-            alt="HAI Rwanda Solutions"
+            src="/program_1.jpg"
+            alt="HAYi Programs"
             fill
             className="object-cover brightness-50"
           />
@@ -83,7 +83,7 @@ export default function SolutionsPage() {
         viewport={{ once: true }}
       >
         <Image
-          src="/edut.JPG"
+          src="/program_2.jpg"
           alt="Menya, Wirinde, Ubeho Program"
           width={800}
           height={600}
@@ -96,7 +96,7 @@ export default function SolutionsPage() {
 {/* Program 2: Mental Health & Wellbeing */}
 <section id="mental-health" className="py-20 md:py-28 bg-muted relative">
   <div className="absolute inset-0 z-0 opacity-10">
-    <Image src="/edut.JPG" alt="Background texture" fill className="object-cover" />
+    <Image src="/program_1.jpg" alt="Background texture" fill className="object-cover" />
   </div>
   <div className="container mx-auto px-4 relative z-10">
     <div className="grid gap-12 lg:grid-cols-2 items-center">
@@ -108,7 +108,7 @@ export default function SolutionsPage() {
         className="order-2 lg:order-1"
       >
         <Image
-          src="/edut.JPG"
+          src="/program_2.jpg"
           alt="Mental Health & Wellbeing"
           width={800}
           height={600}
@@ -186,7 +186,7 @@ export default function SolutionsPage() {
         viewport={{ once: true }}
       >
         <Image
-          src="/gbv.jpg"
+          src="/program_2.jpg"
           alt="GBV Prevention & Safe Spaces"
           width={800}
           height={600}
@@ -199,7 +199,7 @@ export default function SolutionsPage() {
 {/* Program 4: Leadership, Advocacy & Policy Engagement */}
 <section id="leadership" className="py-20 md:py-28 bg-muted relative">
   <div className="absolute inset-0 z-0 opacity-10">
-    <Image src="/sustain.jpg" alt="Background texture" fill className="object-cover" />
+    <Image src="/program_1.jpg" alt="Background texture" fill className="object-cover" />
   </div>
   <div className="container mx-auto px-4 relative z-10">
     <div className="grid gap-12 lg:grid-cols-2 items-center">
@@ -211,7 +211,7 @@ export default function SolutionsPage() {
         className="order-2 lg:order-1"
       >
         <Image
-          src="/sustain.jpg"
+          src="/program_2.jpg"
           alt="Leadership & Advocacy"
           width={800}
           height={600}

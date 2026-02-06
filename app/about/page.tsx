@@ -37,8 +37,8 @@ export default function AboutPage() {
       <section className="bg-primary/90 text-white py-20 md:py-28 relative">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/us.jpg"
-            alt="About HAI Rwanda"
+            src="/team_1.jpg"
+            alt="About HAYi"
             fill
             className="object-cover brightness-50"
           />
@@ -102,8 +102,8 @@ export default function AboutPage() {
               viewport={{ once: true }}
             >
               <Image
-                src="/our_story.jpg"
-                alt="HAI Rwanda Story"
+                src="/team_2.jpg"
+                alt="HAYi Rwanda Story"
                 width={800}
                 height={600}
                 className="rounded-xl object-cover shadow-lg"
@@ -293,6 +293,17 @@ export default function AboutPage() {
                 </div>
               </div>
             </div>
+          </motion.div>
+
+          {/* Founding Members Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="mt-16 mb-8"
+          >
+            <h2 className="text-3xl font-bold tracking-tight md:text-4xl mb-4 text-center">Founding Members</h2>
           </motion.div>
 
           {/* Team Grid */}

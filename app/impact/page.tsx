@@ -402,7 +402,7 @@ export default function ImpactPage() {
             >
               <div className="aspect-video relative">
                 <Image
-                  src="/our_story.jpg"
+                  src="/team_1.jpg"
                   alt="Youth Advocacy Program"
                   fill
                   className="object-cover"

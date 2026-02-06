@@ -51,8 +51,8 @@ export default function ContactPage() {
       <section className="bg-primary/90 text-white py-20 md:py-28 relative">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/us.jpg"
-            alt="Contact HASO GROUP Rwanda"
+            src="/team_1.jpg"
+            alt="Contact HAYi"
             fill
             className="object-cover brightness-50"
           />

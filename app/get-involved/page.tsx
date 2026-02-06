@@ -12,8 +12,8 @@ export default function GetInvolvedPage() {
       <section className="bg-primary/90 text-white py-16 md:py-24 relative">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/hero_bg.jpg"
-            alt="Get Involved with HAI Rwanda"
+            src="/team_1.jpg"
+            alt="Get Involved with HAYi"
             fill
             className="object-cover opacity-90"
           />
