@@ -6,6 +6,59 @@ import Image from "next/image"
 import { Menu, X } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Button } from "@/components/ui/button"
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu"
+
+const aboutLinks = [
+  { label: "Who We Are", href: "/about#our-story", description: "Learn how HAYi started and why we exist." },
+  { label: "Mission & Vision", href: "/about#mission-vision", description: "See where we are headed as a movement." },
+  { label: "Our Values", href: "/about#values", description: "The principles that guide our work." },
+  { label: "Team", href: "/about#team", description: "Meet the people behind HAYi." },
+]
+
+const programGroups = [
+  {
+    label: "SRHR, HIV & GBV Prevention",
+    href: "/programs#menya-wirinde-ubeho",
+    summary: "Empowering youth with SRHR knowledge, HIV prevention, and safe spaces.",
+    subPrograms: ["Menya, Wirinde, Ubeho", "UMURINZI"],
+  },
+  {
+    label: "Mental Health & Wellbeing",
+    href: "/programs#mental-health",
+    summary: "Building resilience, reducing stigma, and expanding support for youth.",
+    subPrograms: ["MindUp", "Mentora"],
+  },
+  {
+    label: "Healthy Lifestyle, Nutrition & WASH",
+    href: "/programs#healthy-lifestyle",
+    summary: "Promoting active living, good nutrition, hygiene, and safe water.",
+    subPrograms: ["HealthEmpower", "NutriChamp", "MajiLife"],
+  },
+  {
+    label: "Leadership, Advocacy & Policy",
+    href: "/programs#leadership",
+    summary: "Equipping youth to influence policy and lead social change.",
+    subPrograms: ["NextWave", "Policy Spotlight"],
+  },
+  {
+    label: "Career & Socio-Economic Empowerment",
+    href: "/programs#career-development",
+    summary: "Supporting youth with skills, mentorship, and economic opportunities.",
+    subPrograms: ["LevelUp"],
+  },
+]
+
+const teamSections = [
+  { label: "Founder & Executive Chairperson", href: "/about#team" },
+  { label: "Founding Members", href: "/about#team" },
+]
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -52,68 +105,111 @@ export default function Header() {
           </Link>
         </motion.div>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex md:items-center md:space-x-8">
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
+        {/* Desktop Navigation with dropdowns */}
+        <nav className="hidden md:flex md:items-center md:space-x-6">
+          <Link
+            href="/"
+            className={`text-sm font-medium transition-colors hover:text-primary ${scrolled ? "text-foreground" : "text-primary"}`}
           >
-            <Link
-              href="/"
-              className={`text-sm font-medium transition-colors hover:text-primary ${scrolled ? "text-foreground" : "text-primary"}`}
-            >
-              Home
-            </Link>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            <Link
-              href="/about"
-              className={`text-sm font-medium transition-colors hover:text-primary ${scrolled ? "text-foreground" : "text-primary"}`}
-            >
-              About Us
-            </Link>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-          >
-            <Link
-              href="/programs"
-              className={`text-sm font-medium transition-colors hover:text-primary ${scrolled ? "text-foreground" : "text-primary"}`}
-            >
-              Programs
-            </Link>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-          >
-            <Link
-              href="/media"
-              className={`text-sm font-medium transition-colors hover:text-primary ${scrolled ? "text-foreground" : "text-primary"}`}
-            >
-              Media
-            </Link>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
-          >
-            <Link
-              href="/contact"
-              className={`text-sm font-medium transition-colors hover:text-primary ${scrolled ? "text-foreground" : "text-primary"}`}
-            >
-              Contact
-            </Link>
-          </motion.div>
+            Home
+          </Link>
+
+          <NavigationMenu>
+            <NavigationMenuList>
+              {/* About dropdown */}
+              <NavigationMenuItem>
+                <NavigationMenuTrigger className={`bg-transparent text-sm font-medium ${scrolled ? "text-foreground" : "text-primary"}`}>
+                  About
+                </NavigationMenuTrigger>
+                <NavigationMenuContent className="bg-muted/50 p-3 dark:bg-background">
+                  <div className="grid w-[420px] gap-2 rounded-lg border bg-popover p-3 shadow">
+                    {aboutLinks.map((item) => (
+                      <NavigationMenuLink asChild key={item.href}>
+                        <Link
+                          href={item.href}
+                          className="block rounded-md p-2 hover:bg-muted transition-colors"
+                        >
+                          <p className="text-sm font-medium">{item.label}</p>
+                          <p className="text-xs text-muted-foreground mt-1">{item.description}</p>
+                        </Link>
+                      </NavigationMenuLink>
+                    ))}
+                  </div>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+
+              {/* Programs dropdown with horizontal reveal */}
+              <NavigationMenuItem>
+                <NavigationMenuTrigger className={`bg-transparent text-sm font-medium ${scrolled ? "text-foreground" : "text-primary"}`}>
+                  Programs
+                </NavigationMenuTrigger>
+                <NavigationMenuContent className="bg-muted/50 p-3 dark:bg-background">
+                  <div className="flex w-[600px] max-w-[80vw] gap-3 overflow-x-auto rounded-lg border bg-popover p-3 shadow">
+                    {programGroups.map((group) => (
+                      <NavigationMenuLink asChild key={group.href}>
+                        <Link
+                          href={group.href}
+                          className="min-w-[220px] max-w-xs rounded-lg border bg-background p-3 hover:border-primary hover:shadow-md transition-transform duration-200 hover:-translate-y-1"
+                        >
+                          <p className="text-sm font-semibold mb-1">{group.label}</p>
+                          <p className="text-xs text-muted-foreground mb-2">{group.summary}</p>
+                          <p className="text-[11px] font-medium text-primary">Key projects</p>
+                          <ul className="mt-1 space-y-0.5 text-[11px] text-muted-foreground">
+                            {group.subPrograms.map((sub) => (
+                              <li key={sub}>• {sub}</li>
+                            ))}
+                          </ul>
+                        </Link>
+                      </NavigationMenuLink>
+                    ))}
+                  </div>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+
+              {/* Team dropdown */}
+              <NavigationMenuItem>
+                <NavigationMenuTrigger className={`bg-transparent text-sm font-medium ${scrolled ? "text-foreground" : "text-primary"}`}>
+                  Team
+                </NavigationMenuTrigger>
+                <NavigationMenuContent className="bg-muted/50 p-3 dark:bg-background">
+                  <div className="rounded-lg border bg-popover p-3 shadow w-[260px] space-y-2">
+                    {teamSections.map((item) => (
+                      <NavigationMenuLink asChild key={item.label}>
+                        <Link
+                          href={item.href}
+                          className="block rounded-md px-2 py-1.5 text-sm hover:bg-muted transition-colors"
+                        >
+                          {item.label}
+                        </Link>
+                      </NavigationMenuLink>
+                    ))}
+                  </div>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+
+              {/* Simple links */}
+              <NavigationMenuItem>
+                <NavigationMenuLink asChild>
+                  <Link
+                    href="/media"
+                    className="rounded-md px-3 py-2 text-sm font-medium hover:bg-accent transition-colors"
+                  >
+                    Media
+                  </Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink asChild>
+                  <Link
+                    href="/contact"
+                    className="rounded-md px-3 py-2 text-sm font-medium hover:bg-accent transition-colors"
+                  >
+                    Contact
+                  </Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
         </nav>
 
         <div className="flex items-center space-x-4">

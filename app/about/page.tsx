@@ -34,7 +34,7 @@ export default function AboutPage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-primary/90 text-white py-20 md:py-28 relative">
+      <section id="about-intro" className="bg-primary/90 text-white py-20 md:py-28 relative">
         <div className="absolute inset-0 z-0">
           <Image
             src="/team_1.jpg"
@@ -50,22 +50,28 @@ export default function AboutPage() {
             transition={{ duration: 0.8 }}
             className="max-w-3xl"
           >
-            <AnimatedText text="About  Us" className="text-4xl font-bold tracking-tight md:text-5xl mb-6" delay={0.3} />
+            <AnimatedText
+              text="Empower.  Educate.  Transform."
+              className="text-4xl font-bold tracking-tight md:text-5xl mb-6"
+              delay={0.3}
+            />
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8, duration: 0.8 }}
               className="text-lg md:text-xl"
             >
-              Learn about our mission, vision, values, and the dedicated team working to empower youth and advance health equity in
-              Rwanda.
+              Health Affairs for Youth Initiatives (HAYi) is a youth-focused social impact organization committed to
+              advancing youth health, gender equity, and empowerment. We address the social determinants of health
+              affecting vulnerable, marginalized, and differently-abled youth, ensuring they have the knowledge,
+              services, and opportunities to thrive.
             </motion.p>
           </motion.div>
         </div>
       </section>
 
       {/* Our Story */}
-      <section className="py-20 md:py-28 bg-white">
+      <section id="our-story" className="py-20 md:py-28 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid gap-12 lg:grid-cols-2 items-center">
             <motion.div
@@ -114,7 +120,7 @@ export default function AboutPage() {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-20 md:py-28 bg-muted relative">
+      <section id="mission-vision" className="py-20 md:py-28 bg-muted relative">
         <div className="absolute inset-0 z-0 opacity-4">
           <Image src="/story.JPG" alt="Background texture" fill className="object-cover" />
         </div>
@@ -149,7 +155,7 @@ export default function AboutPage() {
       </section>
 
       {/* Our Values */}
-<section className="py-20 md:py-28 bg-white">
+<section id="values" className="py-20 md:py-28 bg-white">
   <div className="container mx-auto px-4">
     <SectionTitle
       title="Our Values"

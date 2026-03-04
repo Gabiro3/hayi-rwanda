@@ -44,7 +44,7 @@ export default function SolutionsPage() {
         </div>
       </section>
 
-      {/* Featured Program: Menya, Wirinde, Ubeho */}
+      {/* SRHR, HIV & GBV Prevention & Safe Spaces */}
 <section id="menya-wirinde-ubeho" className="py-20 md:py-28 bg-white">
   <div className="container mx-auto px-4">
     <div className="grid gap-12 lg:grid-cols-2 items-center">
@@ -57,21 +57,26 @@ export default function SolutionsPage() {
         <div className="inline-flex items-center justify-center rounded-full bg-primary/10 p-3 mb-6">
           <BookOpen className="h-8 w-8 text-primary" />
         </div>
-        <h2 className="text-3xl font-bold tracking-tight md:text-4xl mb-4">Menya, Wirinde, Ubeho</h2>
+        <h2 className="text-3xl font-bold tracking-tight md:text-4xl mb-4">
+          SRHR, HIV &amp; GBV Prevention &amp; Safe Spaces
+        </h2>
         <p className="text-lg text-muted-foreground mb-6">
-          A school-based initiative empowering learners with accurate SRHR knowledge to make safe and informed choices.
+          Empowering youth to make informed decisions about their sexual and reproductive health, protect themselves from
+          HIV, and prevent gender-based violence through safe, inclusive spaces.
         </p>
         <div className="space-y-6">
           <motion.div className="space-y-2">
-            <h3 className="text-xl font-medium">Target Group</h3>
+            <h3 className="text-xl font-medium">Menya, Wirinde, Ubeho</h3>
             <p className="text-muted-foreground">
-              Students in secondary schools and out-of-school youth in Gatsibo, Karongi, and Nyarugenge districts.
+              A youth-focused initiative raising awareness on sexual and reproductive health, consent, healthy relationships,
+              and gender equality through interactive workshops, peer-led sessions, and campaigns.
             </p>
           </motion.div>
           <motion.div className="space-y-2">
-            <h3 className="text-xl font-medium">Key Activities</h3>
+            <h3 className="text-xl font-medium">UMURINZI</h3>
             <p className="text-muted-foreground">
-              Peer educator training, SRHR club strengthening, expert-led sessions, monitoring and evaluation, and endline reporting. Duration: 6 months.
+              Trains and empowers students to become advocates for safe, inclusive school environments, equipping them to
+              identify risks, respond to peer challenges, and champion equality and protection.
             </p>
           </motion.div>
         </div>
@@ -93,7 +98,7 @@ export default function SolutionsPage() {
     </div>
   </div>
 </section>
-{/* Program 2: Mental Health & Wellbeing */}
+{/* Mental Health & Wellbeing */}
 <section id="mental-health" className="py-20 md:py-28 bg-muted relative">
   <div className="absolute inset-0 z-0 opacity-10">
     <Image src="/program_1.jpg" alt="Background texture" fill className="object-cover" />
@@ -125,21 +130,24 @@ export default function SolutionsPage() {
         <div className="inline-flex items-center justify-center rounded-full bg-primary/10 p-3 mb-6">
           <Heart className="h-8 w-8 text-primary" />
         </div>
-        <h2 className="text-3xl font-bold tracking-tight md:text-4xl mb-4">Mental Health & Wellbeing</h2>
+        <h2 className="text-3xl font-bold tracking-tight md:text-4xl mb-4">Mental Health &amp; Wellbeing</h2>
         <p className="text-lg text-muted-foreground mb-6">
-          Supporting youth mental health through awareness, counseling services, and safe spaces for dialogue and support.
+          Empowering youth and school staff to build resilience, manage stress, and create supportive environments that
+          prioritize mental health.
         </p>
         <div className="space-y-6">
           <motion.div className="space-y-2">
-            <h3 className="text-xl font-medium">Awareness & Education</h3>
+            <h3 className="text-xl font-medium">MindUp</h3>
             <p className="text-muted-foreground">
-              Programs that raise awareness about mental health issues and reduce stigma among youth.
+              A youth-centered initiative providing peer support, stress management workshops, and digital campaigns to promote
+              emotional wellbeing and build coping skills.
             </p>
           </motion.div>
           <motion.div className="space-y-2">
-            <h3 className="text-xl font-medium">Counseling & Support</h3>
+            <h3 className="text-xl font-medium">Mentora</h3>
             <p className="text-muted-foreground">
-              Access to counseling services and peer support networks for young people facing mental health challenges.
+              A professional development program for teachers and school staff, equipping educators with tools to support
+              students’ mental health and foster safe, inclusive school environments.
             </p>
           </motion.div>
         </div>
@@ -147,8 +155,8 @@ export default function SolutionsPage() {
     </div>
   </div>
 </section>
-{/* Program 3: GBV Prevention & Safe Spaces */}
-<section id="gbv-prevention" className="py-20 md:py-28 bg-white">
+{/* Healthy Lifestyle, Nutrition & WASH */}
+<section id="healthy-lifestyle" className="py-20 md:py-28 bg-white">
   <div className="container mx-auto px-4">
     <div className="grid gap-12 lg:grid-cols-2 items-center">
       <motion.div
@@ -160,21 +168,32 @@ export default function SolutionsPage() {
         <div className="inline-flex items-center justify-center rounded-full bg-primary/10 p-3 mb-6">
           <Users className="h-8 w-8 text-primary" />
         </div>
-        <h2 className="text-3xl font-bold tracking-tight md:text-4xl mb-4">GBV Prevention & Safe Spaces</h2>
+        <h2 className="text-3xl font-bold tracking-tight md:text-4xl mb-4">
+          Healthy Lifestyle, Nutrition &amp; WASH
+        </h2>
         <p className="text-lg text-muted-foreground mb-6">
-          Creating safe spaces and implementing programs to prevent gender-based violence and support survivors through education and advocacy.
+          Empowering youth to adopt balanced diets, stay active, and practice good hygiene and safe water consumption.
         </p>
         <div className="space-y-6">
           <motion.div className="space-y-2">
-            <h3 className="text-xl font-medium">Prevention Programs</h3>
+            <h3 className="text-xl font-medium">HealthEmpower</h3>
             <p className="text-muted-foreground">
-              Educational initiatives and awareness campaigns to prevent gender-based violence in schools and communities.
+              A youth-focused initiative promoting physical activity, sports, and nutrition education through workshops,
+              fitness sessions, and campaigns that build healthy lifestyles and prevent non-communicable diseases.
             </p>
           </motion.div>
           <motion.div className="space-y-2">
-            <h3 className="text-xl font-medium">Safe Spaces</h3>
+            <h3 className="text-xl font-medium">NutriChamp</h3>
             <p className="text-muted-foreground">
-              Facilitating safe spaces for intergenerational dialogues on health rights and gender equality.
+              Raises awareness on nutrition, reduces unhealthy eating practices, and fosters food literacy with practical
+              guidance and mentoring for students and school staff.
+            </p>
+          </motion.div>
+          <motion.div className="space-y-2">
+            <h3 className="text-xl font-medium">MajiLife</h3>
+            <p className="text-muted-foreground">
+              A WASH-focused project promoting safe water consumption, hygiene, and sanitation practices through interactive
+              activities, campaigns, and supportive tools.
             </p>
           </motion.div>
         </div>
@@ -196,7 +215,7 @@ export default function SolutionsPage() {
     </div>
   </div>
 </section>
-{/* Program 4: Leadership, Advocacy & Policy Engagement */}
+{/* Leadership, Advocacy & Policy Engagement */}
 <section id="leadership" className="py-20 md:py-28 bg-muted relative">
   <div className="absolute inset-0 z-0 opacity-10">
     <Image src="/program_1.jpg" alt="Background texture" fill className="object-cover" />
@@ -228,21 +247,26 @@ export default function SolutionsPage() {
         <div className="inline-flex items-center justify-center rounded-full bg-primary/10 p-3 mb-6">
           <Award className="h-8 w-8 text-primary" />
         </div>
-        <h2 className="text-3xl font-bold tracking-tight md:text-4xl mb-4">Leadership, Advocacy & Policy Engagement</h2>
+        <h2 className="text-3xl font-bold tracking-tight md:text-4xl mb-4">
+          Leadership, Advocacy &amp; Policy Engagement
+        </h2>
         <p className="text-lg text-muted-foreground mb-6">
-          Developing youth leadership skills, advocacy capabilities, and engaging with policy makers to advance youth health and rights.
+          Empowering youth to develop leadership skills, influence health and social policies, and drive positive change in
+          their communities.
         </p>
         <div className="space-y-6">
           <motion.div className="space-y-2">
-            <h3 className="text-xl font-medium">Youth Leadership Development</h3>
+            <h3 className="text-xl font-medium">NextWave</h3>
             <p className="text-muted-foreground">
-              Training programs that empower youth to become health advocates and leaders in their communities.
+              A media-driven series (podcast and YouTube talks) showcasing youth leaders, health advocates, and community
+              change-makers to inspire and equip young people to take action.
             </p>
           </motion.div>
           <motion.div className="space-y-2">
-            <h3 className="text-xl font-medium">Policy Dialogue & Advocacy</h3>
+            <h3 className="text-xl font-medium">Policy Spotlight</h3>
             <p className="text-muted-foreground">
-              Engaging with policy makers and stakeholders to advance inclusive health policies and youth rights.
+              A digital series exploring youth engagement in health and social policies with success stories, expert
+              interviews, and practical advocacy guidance.
             </p>
           </motion.div>
         </div>
@@ -251,6 +275,54 @@ export default function SolutionsPage() {
   </div>
 </section>
 
+
+      {/* Call to Action */}
+      <section id="career-development" className="py-20 md:py-28 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="grid gap-12 lg:grid-cols-2 items-center">
+            <motion.div
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
+              <div className="inline-flex items-center justify-center rounded-full bg-primary/10 p-3 mb-6">
+                <Award className="h-8 w-8 text-primary" />
+              </div>
+              <h2 className="text-3xl font-bold tracking-tight md:text-4xl mb-4">
+                Career Development &amp; Socio-Economic Empowerment
+              </h2>
+              <p className="text-lg text-muted-foreground mb-6">
+                Equipping youth with skills, mentorship, and economic opportunities to build sustainable futures and address key
+                social determinants of health.
+              </p>
+              <div className="space-y-6">
+                <motion.div className="space-y-2">
+                  <h3 className="text-xl font-medium">LevelUp</h3>
+                  <p className="text-muted-foreground">
+                    A flexible, youth-centered initiative that combines workshops, mentorship, hands-on projects, digital learning,
+                    career support, and financial literacy to help young people grow their careers and entrepreneurial opportunities.
+                  </p>
+                </motion.div>
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ x: 50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
+              <Image
+                src="/program_2.jpg"
+                alt="Career Development & Socio-Economic Empowerment"
+                width={800}
+                height={600}
+                className="rounded-xl object-cover shadow-lg"
+              />
+            </motion.div>
+          </div>
+        </div>
+      </section>
 
       {/* Call to Action */}
       <section className="py-20 md:py-28 bg-primary text-white relative overflow-hidden">
