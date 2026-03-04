@@ -49,7 +49,8 @@ export default function Footer() {
               />
             </Link>
             <p className="mb-6 text-sm opacity-90">
-              Health Affairs for Youth Initiatives (HAYi) is the social impact arm of HASO GROUP, committed to advancing youth health, gender equity, and empowerment in Rwanda.
+              Health Affairs for Youth Initiatives (HAYi) is a youth-focused social impact organization committed to
+              advancing youth health, gender equity, and empowerment.
             </p>
             <div className="flex space-x-4">
               <Link href="https://facebook.com" className="hover:text-white/80 transition-colors" aria-label="Facebook">

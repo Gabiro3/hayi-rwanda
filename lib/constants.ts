@@ -1,5 +1,19 @@
 export const teamMembers = [
     {
+      name: "Samuel Habimana",
+      title: "Founder & Executive Chairperson",
+      imageUrl: "/sma.jpeg",
+      description1: `A visionary leader with expertise in education, health care management, business, and global health delivery. He has extensive experience designing, implementing, and scaling health and youth empowerment initiatives.`,
+      description2: `A passionate advocate for adolescent health, mentorship, and inclusive leadership, he works with schools, partners, and civil society to create lasting impact for young people.`,
+    },
+    {
+      name: "Ms. Rachel Murekatete",
+      title: "Founding Member",
+      imageUrl: "/Rachel Murekatete, MSc.JPG",
+      description1: `Public health professional with expertise in SRHR, gender equity, and youth empowerment. Supports program implementation and community engagement.`,
+      description2: ``,
+    },
+    {
       name: "Dr. Dukundane Alexandre",
       title: "Founding Member",
       imageUrl: "/Dr. Alexandre Dukundane, MD, MSc.JPG",
@@ -18,13 +32,6 @@ export const teamMembers = [
       title: "Founding Member",
       imageUrl: "/Gustave Muhire, MSc.JPG",
       description1: `Global health advocate specializing in gender, SRHR, and marginalized communities. Leads initiatives promoting inclusive health policies and youth empowerment.`,
-      description2: ``,
-    },
-    {
-      name: "Ms. Rachel Murekatete",
-      title: "Founding Member",
-      imageUrl: "/Rachel Murekatete, MSc.JPG",
-      description1: `Public health professional with expertise in SRHR, gender equity, and youth empowerment. Supports program implementation and community engagement.`,
       description2: ``,
     },
       {

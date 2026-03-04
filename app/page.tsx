@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import SectionTitle from "@/components/section-title"
 import AnimatedText from "@/components/animated-text"
+import { teamMembers } from "@/lib/constants"
 
 export default function Home() {
   const controls = useAnimation()
@@ -374,84 +375,35 @@ export default function Home() {
           />
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mt-16">
-            <motion.div
-              initial={{ y: 50, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-              whileHover={{ y: -10 }}
-              className="flex flex-col items-center text-center p-8 rounded-lg bg-white shadow-md"
-            >
-              <div className="mb-6 h-32 w-32 overflow-hidden rounded-full border-4 border-primary/20">
-                <Image
-                  src="/sma.jpeg"
-                  alt="Samuel Habimana"
-                  width={128}
-                  height={128}
-                  className="object-cover"
-                />
-              </div>
-              <h3 className="mb-1 text-xl font-medium">Samuel Habimana, MSc</h3>
-              <p className="mb-4 text-secondary">Founder & Executive Chairperson</p>
-              <p className="text-muted-foreground text-sm mb-6">
-              Samuel holds a Master of Science in Global Health Delivery (MSc-GHD) with a specialization in Gender, Sexual, and Reproductive Health from the University of Global Health Equity (UGHE) and a Bachelor of Arts in Healthcare Management from Southern New Hampshire University.
-              </p>
-              <Button asChild variant="outline" size="sm" className="border-primary text-primary hover:bg-primary/10">
-                <Link href="/about#team">Read Full Bio</Link>
-              </Button>
-            </motion.div>
-            <motion.div
-              initial={{ y: 50, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              viewport={{ once: true }}
-              whileHover={{ y: -10 }}
-              className="flex flex-col items-center text-center p-8 rounded-lg bg-white shadow-md"
-            >
-              <div className="mb-6 h-32 w-32 overflow-hidden rounded-full border-4 border-primary/20">
-                <Image
-                  src="/Rachel Murekatete, MSc.JPG"
-                  alt="Rachel Murekatete"
-                  width={128}
-                  height={128}
-                  className="object-cover"
-                />
-              </div>
-              <h3 className="mb-1 text-xl font-medium">Rachel Murekatete, MSc</h3>
-              <p className="mb-4 text-secondary">Deputy Executive Director</p>
-              <p className="text-muted-foreground text-sm mb-6">
-              Rachel Murekatete is a seasoned public health professional with a strong background in global health, gender equity, and sexual and reproductive health and rights (SRHR). She holds a Master of Science in Global Health Delivery with a focus on Gender and SRHR from UGHE and a Bachelor of Science in Public Health from MKU.
-              </p>
-              <Button asChild variant="outline" size="sm" className="border-primary text-primary hover:bg-primary/10">
-                <Link href="/about#team">Read Full Bio</Link>
-              </Button>
-            </motion.div>
-            <motion.div
-              initial={{ y: 50, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              viewport={{ once: true }}
-              whileHover={{ y: -10 }}
-              className="flex flex-col items-center text-center p-8 rounded-lg bg-white shadow-md"
-            >
-              <div className="mb-6 h-32 w-32 overflow-hidden rounded-full border-4 border-primary/20">
-                <Image
-                  src="/Dr. Alexandre Dukundane, MD, MSc.JPG"
-                  alt="Dukundane Alexandre"
-                  width={128}
-                  height={128}
-                  className="object-cover"
-                />
-              </div>
-              <h3 className="mb-1 text-xl font-medium">Dr Dukundane Alexandre, MD, MSc</h3>
-              <p className="mb-4 text-secondary">Director of  Sustainable Health Impact & Funding</p>
-              <p className="text-muted-foreground text-sm mb-6">
-              Dr Dukundane Alexandre is a medical doctor and co-founder of Health Affairs Initiatives (HAI), dedicated to enhancing healthcare delivery with a specific focus on maternal, child, neonatal, adolescent, and reproductive health.
-              </p>
-              <Button asChild variant="outline" size="sm" className="border-primary text-primary hover:bg-primary/10">
-                <Link href="/about#team">Read Full Bio</Link>
-              </Button>
-            </motion.div>
+            {teamMembers.slice(0, 3).map((member, index) => (
+              <motion.div
+                key={index}
+                initial={{ y: 50, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                whileHover={{ y: -10 }}
+                className="flex flex-col items-center text-center p-8 rounded-lg bg-white shadow-md"
+              >
+                <div className="mb-6 h-32 w-32 overflow-hidden rounded-full border-4 border-primary/20">
+                  <Image
+                    src={member.imageUrl}
+                    alt={member.name}
+                    width={128}
+                    height={128}
+                    className="object-cover"
+                  />
+                </div>
+                <h3 className="mb-1 text-xl font-medium">{member.name}</h3>
+                <p className="mb-4 text-secondary">{member.title}</p>
+                <p className="text-muted-foreground text-sm mb-6">
+                  {member.description1}
+                </p>
+                <Button asChild variant="outline" size="sm" className="border-primary text-primary hover:bg-primary/10">
+                  <Link href="/about#team">Read Full Bio</Link>
+                </Button>
+              </motion.div>
+            ))}
           </div>
           <div className="text-center mt-12">
             <motion.div

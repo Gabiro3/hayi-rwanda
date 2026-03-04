@@ -70,51 +70,95 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Our Story */}
+      {/* Our Story Timeline */}
       <section id="our-story" className="py-20 md:py-28 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid gap-12 lg:grid-cols-2 items-center">
-            <motion.div
-              initial={{ x: -50, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-            >
-              <h2 className="text-3xl font-bold tracking-tight md:text-4xl mb-4">Who We Are</h2>
-              <div className="space-y-3">
-                <motion.p
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.1 }}
-                  viewport={{ once: true }}
-                  className="text-muted-foreground"
-                >
-                  Health Affairs for Youth Initiatives (<motion.span
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 0.1 }}
-                    viewport={{ once: true }}
-                    className="text-primary mx-1 font-bold"
-                  >
-                    HAYi
-                  </motion.span>) is the <strong>social impact arm of HASO GROUP</strong>, committed to advancing <strong>youth health, gender equity, and empowerment</strong>. Through evidence-based programs, community engagement, and youth-led innovation, HAYi ensures all young people have access to the <strong>knowledge, services, and opportunities</strong> they need to thrive.
-                </motion.p>
-              </div>
-            </motion.div>
-            <motion.div
-              initial={{ x: 50, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-            >
-              <Image
-                src="/team_2.jpg"
-                alt="HAYi Rwanda Story"
-                width={800}
-                height={600}
-                className="rounded-xl object-cover shadow-lg"
-              />
-            </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl font-bold tracking-tight md:text-4xl mb-4">Our Story</h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              From a creative awareness campaign to a comprehensive youth empowerment movement, HAYi has grown to transform lives and advance health equity.
+            </p>
+          </motion.div>
+
+          {/* Timeline */}
+          <div className="max-w-4xl mx-auto">
+            {/* 2013 */}
+            <div className="mb-12">
+              <motion.div
+                initial={{ x: -50, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="flex gap-6 md:gap-12 items-start"
+              >
+                <div className="flex flex-col items-center">
+                  <div className="h-12 w-12 rounded-full bg-secondary text-white flex items-center justify-center font-bold flex-shrink-0">
+                    2013
+                  </div>
+                  <div className="h-32 md:h-40 w-1 bg-gradient-to-b from-secondary to-secondary/20 mt-4"></div>
+                </div>
+                <div className="flex-1 pt-2 pb-8">
+                  <h3 className="text-2xl font-bold mb-3">Don't Die Young Initiative</h3>
+                  <p className="text-muted-foreground">
+                    HAYi began as a creative arts initiative called "Don't Die Young", launched by our founder to raise awareness among youth about risky behaviors such as drug abuse, teenage pregnancy, school dropout, and exploitation.
+                  </p>
+                </div>
+              </motion.div>
+            </div>
+
+            {/* Evolution Phase */}
+            <div className="mb-12">
+              <motion.div
+                initial={{ x: 50, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="flex gap-6 md:gap-12 items-start flex-row-reverse"
+              >
+                <div className="flex flex-col items-center">
+                  <div className="h-12 w-12 rounded-full bg-secondary text-white flex items-center justify-center font-bold flex-shrink-0">
+                    Phase 2
+                  </div>
+                  <div className="h-32 md:h-40 w-1 bg-gradient-to-b from-secondary to-secondary/20 mt-4"></div>
+                </div>
+                <div className="flex-1 pt-2 pb-8">
+                  <h3 className="text-2xl font-bold mb-3">Health Affairs Initiative (HAI)</h3>
+                  <p className="text-muted-foreground">
+                    As the campaign grew, it became clear that awareness alone was not enough. Many challenges facing youth are rooted in poverty, limited education, social exclusion, disability discrimination, economic hardship, and structural inequalities. The initiative evolved to address these social determinants of health, transitioning from creative advocacy to structured health education and youth empowerment.
+                  </p>
+                </div>
+              </motion.div>
+            </div>
+
+            {/* 2023 */}
+            <div className="mb-12">
+              <motion.div
+                initial={{ x: -50, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="flex gap-6 md:gap-12 items-start"
+              >
+                <div className="flex flex-col items-center">
+                  <div className="h-12 w-12 rounded-full bg-secondary text-white flex items-center justify-center font-bold flex-shrink-0">
+                    2023
+                  </div>
+                  <div className="hidden"></div>
+                </div>
+                <div className="flex-1 pt-2">
+                  <h3 className="text-2xl font-bold mb-3">Health Affairs for Youth Initiatives (HAYi)</h3>
+                  <p className="text-muted-foreground">
+                    While pursuing a Master of Science in Global Health Delivery at the University of Global Health Equity (UGHE), our founder met fellow global health professionals and medical doctors who shared the same commitment to health equity and youth empowerment. Together, they transformed the vision into HAYi, a comprehensive platform dedicated to empowering young people to overcome structural barriers and claim their health, voice, and future.
+                  </p>
+                </div>
+              </motion.div>
+            </div>
           </div>
         </div>
       </section>

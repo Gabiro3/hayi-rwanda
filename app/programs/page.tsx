@@ -88,7 +88,7 @@ export default function SolutionsPage() {
         viewport={{ once: true }}
       >
         <Image
-          src="/program_2.jpg"
+          src="/gallery/programs/UMURINZI.jpg"
           alt="Menya, Wirinde, Ubeho Program"
           width={800}
           height={600}
@@ -113,7 +113,7 @@ export default function SolutionsPage() {
         className="order-2 lg:order-1"
       >
         <Image
-          src="/program_2.jpg"
+          src="/gallery/programs/MindUp.jpeg"
           alt="Mental Health & Wellbeing"
           width={800}
           height={600}
@@ -205,8 +205,8 @@ export default function SolutionsPage() {
         viewport={{ once: true }}
       >
         <Image
-          src="/program_2.jpg"
-          alt="GBV Prevention & Safe Spaces"
+          src="/gallery/programs/HealthEmpower.png"
+          alt="Gallery image for Healthy Lifestyle, Nutrition & WASH program"
           width={800}
           height={600}
           className="rounded-xl object-cover shadow-lg"
@@ -230,7 +230,7 @@ export default function SolutionsPage() {
         className="order-2 lg:order-1"
       >
         <Image
-          src="/program_2.jpg"
+          src="/gallery/programs/Mentoraa.jpg"
           alt="Leadership & Advocacy"
           width={800}
           height={600}
