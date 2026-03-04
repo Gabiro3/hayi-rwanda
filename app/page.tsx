@@ -101,7 +101,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <SectionTitle
             title="About HAYi"
-            subtitle="Health Affairs for Youth Initiatives (HAYi) is the social impact arm of HASO GROUP, committed to advancing youth health, gender equity, and empowerment. Through evidence-based programs, community engagement, and youth-led innovation, HAYi ensures all young people have access to the knowledge, services, and opportunities they need to thrive."
+            subtitle="Health Affairs for Youth Initiatives (HAYi) is a youth-focused social impact organization committed to advancing youth health, gender equity, and empowerment. We address the social determinants of health affecting vulnerable, marginalized, and differently-abled youth, ensuring they have the knowledge, services, and opportunities to thrive."
             backgroundImage="/placeholder.svg?height=300&width=1920"
           />
 
@@ -578,7 +578,7 @@ export default function Home() {
                 <Mail className="h-8 w-8 text-primary" />
               </div>
               <h3 className="mb-3 text-xl font-medium">Email</h3>
-              <p className="text-muted-foreground">info@hayi.org</p>
+              <p className="text-muted-foreground">info@hayirwanda.org</p>
             </motion.div>
             <motion.div
               initial={{ y: 30, opacity: 0 }}

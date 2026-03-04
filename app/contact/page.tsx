@@ -98,7 +98,7 @@ export default function ContactPage() {
                 <Mail className="h-8 w-8 text-primary" />
               </div>
               <h3 className="text-xl font-bold mb-3">Email</h3>
-              <p className="text-muted-foreground">info@hayi.org</p>
+              <p className="text-muted-foreground">info@hayirwanda.org</p>
             </motion.div>
             <motion.div
               initial={{ y: 50, opacity: 0 }}
@@ -113,7 +113,7 @@ export default function ContactPage() {
               </div>
               <h3 className="text-xl font-bold mb-3">Phone</h3>
               <p className="text-muted-foreground">+250 788 123 456</p>
-              <p className="text-muted-foreground">+250 722 987 654</p>
+              <p className="text-muted-foreground">+250 788 229 880</p>
             </motion.div>
             <motion.div
               initial={{ y: 50, opacity: 0 }}
@@ -351,7 +351,7 @@ export default function ContactPage() {
                 <h3 className="text-xl font-bold mb-2">Can organizations partner with HAYi?</h3>
                 <p className="text-muted-foreground">
                   Yes, we welcome partnerships with schools, government, and NGOs that share our vision for youth health and empowerment. Please
-                  contact us through this form or email us at info@hayi.org to discuss potential
+                  contact us through this form or email us at info@hayirwanda.org to discuss potential
                   collaboration opportunities.
                 </p>
               </motion.div>

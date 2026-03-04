@@ -192,7 +192,7 @@ export default function MediaPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" variant="secondary">
-              <Link href="mailto:info@hayi.org">Email Media Relations</Link>
+              <Link href="mailto:info@hayirwanda.org">Email Media Relations</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-white text-white bg-primary hover:bg-primary/10">
               <Link href="/contact">

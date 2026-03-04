@@ -123,7 +123,7 @@ export default function AboutPage() {
               >
                 <div className="flex flex-col items-center">
                   <div className="h-12 w-12 rounded-full bg-secondary text-white flex items-center justify-center font-bold flex-shrink-0">
-                    Phase 2
+                    2018
                   </div>
                   <div className="h-32 md:h-40 w-1 bg-gradient-to-b from-secondary to-secondary/20 mt-4"></div>
                 </div>
@@ -179,7 +179,7 @@ export default function AboutPage() {
             >
               <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
               <p className="text-muted-foreground">
-              To promote <strong>inclusive youth health and well-being</strong> through education, advocacy, innovation, and community-driven programs, ensuring that all young people—regardless of gender, background, or ability—have equitable access to resources to thrive.
+              To promote <strong>inclusive youth health and well-being</strong> through education, advocacy, innovation, and community-driven programs, ensuring that all young people regardless of gender, background, or ability have equitable access to resources to thrive.
               </p>
             </motion.div>
             <motion.div
