@@ -65,7 +65,7 @@ export const teamMembers = [
       {
         name: "Wellars Mvuyekure",
         title: "Founding Member",
-        imageUrl: "/Wellars Mvuyekure.JPG",
+        imageUrl: "/Mvuyekure.jpg",
         description1: `Public health and Gender/SRHR specialist focused on advancing health equity, project management, and community-driven interventions.`,
         description2: ``,
       },

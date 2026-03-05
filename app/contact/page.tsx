@@ -112,7 +112,6 @@ export default function ContactPage() {
                 <Phone className="h-8 w-8 text-primary" />
               </div>
               <h3 className="text-xl font-bold mb-3">Phone</h3>
-              <p className="text-muted-foreground">+250 788 123 456</p>
               <p className="text-muted-foreground">+250 788 229 880</p>
             </motion.div>
             <motion.div

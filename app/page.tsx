@@ -592,7 +592,7 @@ export default function Home() {
                 <Phone className="h-8 w-8 text-primary" />
               </div>
               <h3 className="mb-3 text-xl font-medium">Phone</h3>
-              <p className="text-muted-foreground">+250 788 123 456</p>
+              <p className="text-muted-foreground">+250 788 229 880</p>
             </motion.div>
             <motion.div
               initial={{ y: 30, opacity: 0 }}
